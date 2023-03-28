@@ -54,13 +54,6 @@
             </li>
           </ul>
         </address>
-      </div>
-
-      <!--Mobile-menu-->
-      <div class="header-container-mobile">
-        <a class="logo link" href="./index.html"
-          ><span class="logo-web">Web</span>Studio</a
-        >
         <button class="menu-burger js-open-menu" type="button">
           <svg class="menu-burger-icon" width="32px" height="22px">
             <use href="./images/sprite.svg#icon-icon-menu"></use>
@@ -68,70 +61,73 @@
         </button>
       </div>
 
+      <!--Mobile-menu-->
       <div class="mobile-menu js-menu-container">
-        <button class="modal-close js-close-menu" type="button">
-          <svg class="modal-close-icon" width="8px" height="8px">
-            <use href="./images/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-        <nav class="mobile-nav">
-          <ul class="mobile-link-list">
-            <li>
-              <a class="mobile-link" href="./index.html">Studio</a>
+        <div class="mobile-menu-container">
+          <button class="modal-close js-close-menu" type="button">
+            <svg class="modal-close-icon" width="8px" height="8px">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-link-list">
+              <li>
+                <a class="mobile-link current" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-adress">
+            <ul class="mobile-contact-list">
+              <li>
+                <a class="mobile-contact-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mobile-contact-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+  
+          <ul class="list social-list socials-list-mobile">
+            <li class="social-item">
+              <a class="link social-link" href="">
+                <svg class="socials-icon-mobile">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="mobile-link" href="./portfolio.html">Portfolio</a>
+            <li class="social-item">
+              <a class="link social-link" href="">
+                <svg class="socials-icon-mobile">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="mobile-link" href="">Contacts</a>
+            <li class="social-item">
+              <a class="link social-link" href="">
+                <svg class="socials-icon-mobile">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="link social-link" href="">
+                <svg class="socials-icon-mobile">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <address class="mobile-adress">
-          <ul class="mobile-contact-list">
-            <li>
-              <a class="mobile-contact-tel" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a class="mobile-contact-mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-
-        <ul class="list social-list socials-list-mobile">
-          <li class="social-item">
-            <a class="link social-link" href="">
-              <svg class="socials-icon-mobile">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="link social-link" href="">
-              <svg class="socials-icon-mobile">
-                <use href="./images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="link social-link" href="">
-              <svg class="socials-icon-mobile">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="link social-link" href="">
-              <svg class="socials-icon-mobile">
-                <use href="./images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -580,8 +576,10 @@
           <div class="modal-checkbox">
             <input class="checkbox-input" id="user-policy" type="checkbox" name="policy" value="policy">
             <label class="checkbox-label" for="user-policy">
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           
